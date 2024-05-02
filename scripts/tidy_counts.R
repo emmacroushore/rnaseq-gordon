@@ -1,6 +1,3 @@
-dir.create(Sys.getenv("R_LIBS_USER"), recursive = TRUE)  # create personal library
-.libPaths(Sys.getenv("R_LIBS_USER"))  # add to the path
-
 install.packages(c("tidyverse", "magrittr","stringr","dplyr"),repos = "http://cran.us.r-project.org")
 
 library(tidyverse)
