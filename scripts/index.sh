@@ -16,6 +16,7 @@ gunzip $workdir/hs_index/gencode.v29.annotation.gtf.gz
 module load stack/2022.2-base_arch # https://uiowa.atlassian.net/wiki/spaces/hpcdocs/pages/76513504/2022.2+stack
 module load star/2.7.0e_gcc-8.4.0
 
+# creates an index suited to reads of ~100bp
 STAR --runThreadN 8 \
 --runMode genomeGenerate \
 --genomeDir $workdir/hs_index/hs_genome \
