@@ -5,3 +5,11 @@ Croushore EE, Koppenhafer SL, Goss KL, Geary EL, Gordon DJ. Activator Protein-1 
 
 GEO Datasets:
 https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE215881
+
+Modules:
+Environment modules are used to control the environment setup.
+https://uiowa.atlassian.net/wiki/x/nICPB
+
+More Information:
+Documentation for using the Argon cluster can be found at:
+https://uiowa.atlassian.net/wiki/x/BYCPB
