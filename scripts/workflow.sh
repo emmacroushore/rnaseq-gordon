@@ -18,7 +18,7 @@ cd fastq
 
 staridx=$workdir/hs_index_100/hs_genome
 
-#module load stack
+module load stack/2022.2-base_arch
 
 for i in *_R1_001.fastq.gz; do 
   STAR --runMode alignReads \
@@ -34,7 +34,7 @@ for i in *_R1_001.fastq.gz; do
 ## generate read counts
 cd $workdir
 mkdir counts
-module load stack/2022.2-base_arch
+#module load stack/2022.2-base_arch
 
 featureCounts -T 4 -s 2 -p -t exon -g gene_id -a $workdir/hs_index_100/gencode.v29.annotation.gtf -o $workdir/counts/counts.txt *.bam
 
