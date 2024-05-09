@@ -10,8 +10,7 @@ module load stack/2021.1-base_arch
 ## download fastq.gz files
 mkdir fastq  # this makes a new folder called "fastq" where we will download our files
 
-wget -P $workdir/fastq -r -l 2 -nH -nd -np --ignore-case -A '*fastq.gz' http://dnacore454.healthcare.uiowa.edu/20230121-0382_Gordon_23002aMxHLSHcKuowawEVjRVzQVXpPXHnImADkEVibTZw/results/Project_Gordon_23002/
-
+wget -P $workdir/fastq -r -l 2 -nH -nd -np --ignore-case -A '*fastq.gz' [link to folder containing subfolders with paired-end reads for each sample]
 ## quality checking fastq.gz files
 mkdir fastq/qc
 mkdir fastq/multiqc
